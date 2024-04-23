@@ -1,0 +1,30 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+{% block baner %}
+    <div class="baners">
+        <img src="{% static 'img/kartinki-biblioteka-25.jpg' %}" alt="банер">
+        <div class="but_new">
+            <a class="link_new" href="{% url 'catalog' %}">Перейти к новинкам</a>
+        </div>
+    </div>
+    <div class="Category">
+        <div class="text-category">
+            <p class="t-category">Категории книг<p>
+        </div>
+        <div class="cards">
+            {% for category in categories %}
+            <div class="card-category">
+                <img src="{{ category.image.url }}">
+                <div class="texts">
+                    <div class="name_category"><p>{{ category.name }}</p></div>
+                    <a href="{% url 'category_description' category.id %}"><div class="etc"><p>Подробнее</p></div></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}

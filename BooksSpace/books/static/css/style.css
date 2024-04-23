@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a2ccfd;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* стили шапки страницы */
+
+.head {
+    display: flex;
+    background-color: #80b7d5;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.buts_panel {
+    display: flex;
+    flex-direction: row;
+}
+
+/* стили логотипа*/
+.logo-conteiner {
+    position: relative;
+}
+
+.logo-conteiner img{
+    padding-top: 5px;
+    width: 300px;
+    height: 75px;
+    margin-right: 650px;
+}
+
+.textlogo {
+    position: absolute;
+    text-align: center;
+    bottom: 3%;
+    left: 5%;
+    padding: 10px;
+    font-size: 36px;
+    color: #605f8f;
+    font-weight: bold;
+}
+
+.but_panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #8590b9, #a9b8ec, #8590b9);
+    height: 50px;
+    width: 150px;
+    margin-right: 5px;
+    
+    border: 2px solid #555796;
+    border-radius: 40px;
+}
+
+.but_panel:hover {
+    background: linear-gradient(to right, #a9b8ec, #8590b9, #a9b8ec);
+}
+
+a{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(226, 239, 255);
+    font-weight: bold;
+}
+
+.decor{
+    background-color: #6a84ab;
+    width: 100%;
+    height: 5px;
+}
+
+/* стили футера страницы */
+
+footer {
+    position: relative; /* Изменение позиционирования на относительное */
+    background-color: #6eabcb;
+    height: 225px;
+    width: 100%;
+    border-radius: 45px 45px 0px 0px;
+    margin-top: 10px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* стили логотипа сайта */
+.IconLogo{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.icontext {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.info {
+    display: flex;
+    gap: 80px;
+    margin-top: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.networks {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.rigths p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.fromGoOut {
+    display: flex;
+    margin-left: auto;
+    align-items: start;
+    justify-content: center; /* Разместить форму "Выйти" в конце контейнера */
+}
+
+.goOutBut{
+    background-color: rgba(202, 94, 202, 0);
+    border: none;
+    padding: 0;
+    
+}
+
+.goOutBut p{
+    padding-bottom: 35px;
+    padding-right: 35px;
+}
+
+.goOutBut:hover{
+    cursor:pointer;
+    background-color: inherit;
+}
+
+@media (max-width: 400px) {
+    .logo-conteiner img{
+        padding-top: 5px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .textlogo {
+        font-size: 30px;
+    }
+    .head {
+        gap: 5px;
+        padding-bottom: 5px;
+    }
+    footer {
+        height: 180px;
+    }
+    .but_panel {
+        background: linear-gradient(to right, #CC8700, #FFC045, #CC8700);
+        height: 40px;
+        width: 350px;
+        margin-right: 10px;
+        border: 2px solid #E9B654;
+        border-radius: 40px;
+    }
+    .IconLogo{
+        padding-top: 10px;
+    }    
+    .IconLogo img {
+        padding-top: 5px;
+        max-width: 50px;
+        height: auto;
+    }
+    .icontext {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .info {
+        gap: 10px;
+    }
+    .info a {
+        font-size: 18px;
+    }
+
+    .networks {
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .networks div img {
+        height: 30px;
+    }
+
+    .rigths p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}

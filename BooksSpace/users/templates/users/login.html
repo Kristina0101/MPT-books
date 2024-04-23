@@ -1,0 +1,19 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block title %}Войти{% endblock %}
+{% block baner %}
+    <div class="form_togo">
+        <div><p>Войти</p></div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                {{ form.as_p }}
+            </fieldset>
+            <input class="but_togo" type="submit" value="Войти">
+            <button class="buttt"><a href="{% url 'register' %}">Регистрация</a></button>
+        </form>
+    </div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}

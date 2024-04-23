@@ -1,0 +1,34 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block title %}В планах{% endblock %}
+{% block baner %}
+    <div class="baner_catalog">
+        <img src="{% static 'img/fZWhISqEETo.jpg' %}" alt="банер">
+        <div class="but_new_c">
+            <i><p class="link_new_c">В планах</p></i>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="books">
+        {% if favorite_books %}
+            {% for book in favorite_books %}
+                <div class="back_books">
+                    <div class="photo_book">
+                        <img src="{{ book.image.url }}" alt="">
+                    </div>
+                    <div class="line1"> </div>
+                    <div class="name_book">{{ book.name_book }}</div>
+                    <div class="line2"> </div>
+                    <div class="author">{{ book.author.name }} {{ book.author.surname }}</div>
+                    <div class="line1"> </div>
+                    <div class="buts_books">
+                        <a href="{% url 'book_description' book.id %}" class="but_description"><p>Описание</p></a>
+                    </div>    
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет книг в планах.</p>
+        {% endif %}
+    </div>
+{% endblock %}

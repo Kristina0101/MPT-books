@@ -1,0 +1,40 @@
+{% load static %}
+<header>
+    <div class="head">
+        <div class="logo-conteiner">
+            <img src="{% static 'img/1672258759_flomaster-club-p-oblako-risunok-dlya-detei-instagram-54.png'%}" alt="" height="60px">
+            <div class="textlogo"><p>MPT&Books</p></div>
+        </div>
+        <div class="buts_panel">
+            
+            <a href="{% url 'main_page' %}"><div class="but_panel pan1">
+                <p>Главная</p>
+            </div></a>
+            <a href="{% url 'catalog' %}"><div class="but_panel pan2">
+                <p>Каталог</p>
+            </div></a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'plans' %}"><div class="but_panel pan3">
+                <p>В планах</p>
+            </div></a>
+            <a href="{% url 'profile' %}"><div class="but_panel pan5">
+                <p>Профиль</p>
+            </div></a>
+            <div class="but_panel pan5">
+                <form class="fromGoOut" action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button class="goOutBut" type="submit">
+                    <a>
+                        <p>Выйти</p>
+                    </a>
+                </button>
+            </form></div>           
+            {% else %}
+            <a href="{% url 'login' %}"><div class="but_panel pan6">
+                <p>Вход</p>
+            </div></a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="decor"></div>
+</header>

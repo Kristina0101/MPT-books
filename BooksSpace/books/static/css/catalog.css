@@ -1,0 +1,219 @@
+.baner_catalog {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.baner_catalog img{
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.but_new_c {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 45%;
+    height: auto;
+    width: 20%;    
+    background: #2039b693;
+    border-radius: 60px;
+    right: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.link_new_c {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #FFE4CC, #fff2e7, #FFE4CC);
+    -webkit-background-clip: text; /* Для поддержки вебкит-браузеров */
+    background-clip: text; /* Стандартное свойство */
+    color: transparent; /* Скрываем цвет текста */
+}
+
+
+.catagories{
+    flex: 1; /* Занимает 1/6 страницы */
+    align-items: stretch;
+    background-color: #7c7fc172;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 1500px;
+}
+
+.name_head{
+    border-top: 4px solid #606e95;
+    border-bottom: 4px solid #606e95;
+    margin-top: 40px;
+}
+
+.name_head p{
+    font-size: 32px;
+    text-align: center;
+    color: #20213f;
+    font-family: Arial Narrow, sans-serif;
+    letter-spacing: 2px;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: row;
+}
+
+.catagories_list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.categ_name{
+    border-top: 1px solid #606e95;
+    border-bottom: 1px solid #606e95;
+    background-color: #8c77c190;
+    height: 55px;
+    border-radius: 30px;
+}
+
+.categ_name1{
+    border-top: 1px solid #606e95;
+    border-bottom: 1px solid #606e95;
+    border-radius: 50px;
+    background-color: #8c77c190;
+    height: 55px;
+    margin-top: 30px;
+}
+
+
+.categ_name1 p{
+    font-size: 24px;
+    text-align: center;
+    color: #20213f;;
+    font-family: Arial Narrow, Monospace;
+    letter-spacing: 2px;
+    font-style: italic;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.categ_name p{
+    font-size: 24px;
+    text-align: center;
+    color: #20213f;;
+    font-family: Arial Narrow, Monospace;
+    letter-spacing: 2px;
+    font-style: italic;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.books{
+    display: flex;
+    flex: 5; /* Занимает 5/6 страницы */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.back_books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b2afda;
+    border-radius: 60px;
+    width: 350px;
+    height: 450px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.photo_book img{
+    height: 235px;
+    margin-top: 10px;
+}
+
+.name_book{
+    font-size: 20px;
+    color: #574108;
+    text-align: center;
+    margin: 10px
+}
+
+.line1{
+    width: 275px;
+    height: 2px;
+    background-color: #606e95;
+}
+
+.line2{
+    width: 126px;
+    height: 2px;
+    background-color: #606e95;
+}
+
+.author{
+    font-size: 18px;
+    color: #574108;
+    text-align: center;
+    margin: 5px
+}
+
+.buts_books{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.but_description{
+    width: 184px;
+    height: 44px;
+    background-color: rgba(35, 142, 236, 0.373);
+    border: 2px solid #606e95;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.but_description p{
+    font-size: 20px;
+    color: #413f8d;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.but_description:hover{
+    background: linear-gradient(to right, #274ef9, rgb(138, 162, 250), #274ef9);
+}
+
+.but_description:active{
+    background: #274ef9;
+}
+
+.favour {
+    margin-left: 15px;
+}
+
+.favour img{
+    height: 40px;
+    width: 40px;
+}
+
+.descr_categor{
+    padding: 20px;
+    background-color: #7189cd77;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.descr_categor p{
+    font-size: 26px;
+}

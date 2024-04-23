@@ -1,0 +1,11 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block title %}Выйти{% endblock %}
+{% block content %}
+    <div class="logoutdes">
+        <h2>Вы вышли из своей учетной записи</h2>
+        <div class="ToGO">
+            <a href="{% url 'login' %}" class="but_to_go"><p>Войти</p></a>
+        </div>
+    </div>
+{% endblock %}

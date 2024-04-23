@@ -1,0 +1,151 @@
+.books_back1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.book_background1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #88b6ff;
+    border-radius: 40px;
+    width: 1500px;
+    padding: 20px;
+}
+
+.photos_book1 img{
+    width: 300px;
+    padding: 10px;
+}
+
+.first_part1{
+    display: flex;
+    justify-content: center;
+    background-color: #6da5ff;
+    border-radius: 70px;
+    padding: 20px;
+    margin-left: 30px;
+    align-self: center;
+
+    flex-grow: 1;
+}
+.second_part1{
+    flex-grow: 10;
+}
+
+.second_part1 .author_book1, .name_book1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.name_book1{
+    font-size: 30px;
+    background-color: #65a0fe91;
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.author_book1 {
+    font-size: 24px;
+    background-color: #75a8fb91;
+    width: auto;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.blocks1 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.item_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.decor{
+    background-color: #6da5ff51;
+}
+
+.item_1 p{
+    font-size: 22px;
+    
+}
+
+.file_book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #2292ae91;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid #2e84e1;
+}
+
+.file_book:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #2292ae;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.file_book1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    background-color: #2292ae91;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #2e84e1;
+}
+
+.file_book1:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    background-color: #2292ae;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.item_2{
+    background-color: #74a9ff8a;
+    width: 50%;
+    padding: 40px;
+    border-radius: 30px;
+}
+.item_2 p:first-child{
+    font-size: 22px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.item_2 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+

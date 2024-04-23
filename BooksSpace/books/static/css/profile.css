@@ -1,0 +1,109 @@
+.media{
+    display: flex;
+    flex-direction: row;
+    background-color: #6eaaff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50px;
+}
+
+.prof-photo{
+    background-color: #5093f1;
+    margin: 40px;
+    border-radius: 30px;
+}
+
+.prof-photo img{
+    width: 300px;
+    padding: 20px;
+}
+
+.info_user {
+    display: flex;
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+legend{
+    color: rgb(13, 13, 103);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+label{
+    text-align: center;
+}
+
+.buton{
+    font-size: 22px;
+    color: rgb(31, 31, 146);
+    background-color: rgb(92, 168, 255);
+    height: 40px;
+    width: 200px;
+    border: 1px solid #2a7ef4;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.logoutdes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6eaaff;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.logoutdes h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #031a3a;
+}
+
+.ToGO{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.but_to_go{
+    width: 184px;
+    height: 44px;
+    background-color: rgba(35, 142, 236, 0.373);
+    border: 2px solid #606e95;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.but_to_go p{
+    font-size: 20px;
+    color: #14125d;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.but_to_go:hover{
+    background: linear-gradient(to right, #274ef9, rgb(138, 162, 250), #274ef9);
+}
+
+.but_to_go:active{
+    background: #274ef9;
+}

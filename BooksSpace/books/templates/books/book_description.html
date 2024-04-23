@@ -1,0 +1,46 @@
+{% extends "books/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}Описание книги{% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="books_back1">
+        <div class="book_background1">
+            <div class="first_part1">
+                <div class="photos_book1"><img src="{{ books.image.url }}" alt=""></div>
+            </div>
+            <div class="second_part1">
+                <div class="name_book1"><p> {{ books.name_book }}</p></div>
+                <div class="author_book1"><p>Автор: &nbsp</p><p> {{ books.author.name }} {{ books.author.surname }}</p></div>
+                <div class="blocks1">
+                    <div class="item_1">
+                            <div class="category_book"><p>Категория: &nbsp {{ books.category.name }}</p></div>
+                            <div class="publishing_book"><p>Издательство: &nbsp {{ books.publishing.name }}</p></div>
+                            <div class="series_book"><p>Серия: &nbsp {{ books.series }}</p></div>
+                            <div class="year_book"><p>Год издания: &nbsp {{ books.year_publishing }}</p></div>
+                            <div class="file_book"><a href="{{ books.file_book.url }}" download> Скачать</a></div>
+                            {% if user.is_authenticated %}
+                            <div class="file_book3">
+                                <form action="{% url 'add_to_favorites' %}" method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="book_id" value="{{ books.id }}">
+                                    <button class="file_book1" type="submit"><a>В планы</a></button>
+                                </form>
+                            </div>
+                            {% endif %}
+                    </div>
+                    <div class="item_2"><p>Описание:</p><br><p> {{ books.description }}</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
+
+

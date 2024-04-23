@@ -1,0 +1,44 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block title %}Каталог{% endblock %}
+{% block baner %}
+    <div class="baner_catalog">
+        <img src="{% static 'img/52-2.jpg.jpg' %}" alt="банер">
+        <div class="but_new_c">
+            <i><p class="link_new_c">Каталог книг</p></i>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="catagories">
+            <div class="name_head">
+                <p><i>Категории</i></p>
+            </div>
+            <div class="catagories_list">
+                {% for category in categories %}
+                    <a href="{% url 'category_books' category.id %}"><div class="categ_name"><p>{{ category.name }}</p></div></a>
+                {% endfor %}
+                <a href="{% url 'catalog' %}"><div class="categ_name1"><p>Назад ко всем книгам</p></div></a>
+            </div>
+        </div>
+        <div class="books">
+            {% for book in books %}
+            <div class="back_books">
+                <div class="photo_book">
+                    <img src="{{ book.image.url }}" alt="">
+                </div>
+                <div class="line1"> </div>
+                <div class="name_book">{{ book.name_book }}</div>
+                <div class="line2"> </div>
+                <div class="author">{{ book.author.name }} {{ book.author.surname }}</div>
+                <div class="line1"> </div>
+                <div class="buts_books">
+                    <a href="{% url 'book_description' book.id %}" class="but_description"><p>Описание</p></a>
+                </div>    
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}
